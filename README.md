@@ -1,5 +1,5 @@
 # HKU-BSIM4024-Object-Oriented-Programming-E-library
-This is a course work of The University of Hong Kong (HKU)
+This is a course work of The University of Hong Kong (HKU) by group 1
 
 # E-Library System
 
