@@ -1,0 +1,106 @@
+/* 1. Global Page Settings */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+html, body, [class*="css"]  {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* Very light slate background */
+}
+
+/* 2. Add Space Above Labels (The "Too Close" Fix) */
+label[data-testid="stWidgetLabel"] {
+    margin-bottom: 10px !important; /* Space between label and input */
+    margin-top: 15px !important;    /* Space between different fields */
+    font-weight: 600 !important;
+    color: #334155 !important;      /* Slate-700 */
+}
+
+/* 3. Modern Card Design (Expanders) */
+.streamlit-expanderHeader {
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 15px 20px !important;
+    margin-bottom: 10px !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+    transition: all 0.2s ease;
+}
+
+.streamlit-expanderHeader:hover {
+    border-color: #6366f1 !important; /* Indigo border on hover */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+}
+
+.streamlit-expanderContent {
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-top: none !important;
+    border-radius: 0 0 12px 12px !important;
+    padding: 25px !important; /* Extra padding inside the card */
+    margin-bottom: 20px !important;
+}
+
+/* 4. Input Field Styling */
+.stTextInput input, .stSelectbox div[data-baseweb="select"], .stDateInput input {
+    border-radius: 8px !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 10px 12px !important;
+    background-color: #ffffff !important;
+}
+
+/* 5. Button Design (Careful & Purposeful) */
+div.stButton > button {
+    width: 100%;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    padding: 0.6rem 1rem !important;
+    border: none !important;
+    transition: transform 0.1s active, background-color 0.3s ease !important;
+}
+
+/* Save/Add Buttons (Indigo/Primary) */
+button[key*="save"], button[key*="usave"], button[key*="Add"] {
+    background-color: #4f46e5 !important; /* Indigo-600 */
+    color: white !important;
+}
+
+button[key*="save"]:hover, button[key*="Add"]:hover {
+    background-color: #4338ca !important;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3) !important;
+}
+
+/* Delete Buttons (Soft Red) */
+button[key*="del"], button[key*="udel"] {
+    background-color: #fee2e2 !important; /* Red-100 */
+    color: #dc2626 !important;            /* Red-600 */
+}
+
+button[key*="del"]:hover {
+    background-color: #ef4444 !important;
+    color: white !important;
+}
+
+/* 6. Sidebar Navigation Styling */
+[data-testid="stSidebar"] {
+    background-color: #0f172a !important; /* Dark Slate */
+}
+
+[data-testid="stSidebar"] section {
+    padding-top: 2rem !important;
+}
+
+/* 7. Tabs Styling */
+button[data-baseweb="tab"] {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    padding: 12px 20px !important;
+}
+
+/* 8. Success/Info Messages Padding */
+div[data-testid="stMarkdownContainer"] p {
+    line-height: 1.6;
+}
+
+.stAlert {
+    border-radius: 10px !important;
+    border: none !important;
+}
