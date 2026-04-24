@@ -1,7 +1,7 @@
 import os
 import pymongo
 from models import LogEntry
-os.environ["MONGODB_URI"] = "mongodb+srv://hod32647_db_user:UitysSh1yRrNnowe@librarysystem.czkaeg4.mongodb.net/?retryWrites=true&w=majority&appName=LibrarySystem"
+
 
 class DBManager:
     def __init__(self, uri=None):
